@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  form(action="/submit" method="POST", style="text-align: center;")
+    label(for="empleado") Empleado:
+    input(type="text" id="empleado" name="empleado")
+
+    label(for="ruta") Ruta:
+    input(type="text" id="ruta" name="ruta")
+
+    label(for="tipo") Tipo:
+    input(type="text" id="tipo" name="tipo")
+
+    label(for="cantidad") Cantidad:
+    input(type="number" id="cantidad" name="cantidad")
+
+    button(type="submit") Submit

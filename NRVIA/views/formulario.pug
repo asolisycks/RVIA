@@ -1,0 +1,22 @@
+// formulario.pug
+doctype html
+html
+  head
+    title Formulario
+  body
+    form(method='post', action='/formulario')
+      label(for='nombre') Nombre
+      input(type='text', id='nombre', name='nombre')
+      label(for='email') Email
+      input(type='email', id='email', name='email')
+      button(type='submit') Enviar
+
+// confirmacion.pug
+doctype html
+html
+  head
+    title Confirmación
+  body
+    h1 Datos recibidos
+    p Nombre: #{nombre}
+    p Email: #{email}
